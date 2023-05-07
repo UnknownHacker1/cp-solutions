@@ -7,31 +7,7 @@ TASK:
 #include "dreaming.h"
 using namespace std;
 using ll = long long; 
-void moo(string filename);
-void ACPLS(string str = "")
-{
-    if(str=="NOF")return;
-    if(str.size() && str != "IIOT")
-        moo(str);
-    else if(str != "IIOT"){
-#ifndef ONLINE_JUDGE
-        freopen("output.txt", "w", stdout);
-        freopen("input.txt", "r", stdin);
-#endif
-    }
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-}
-void moo(string fileName){
-    freopen((fileName+".in").c_str(),"r",stdin);
-    freopen((fileName+".out").c_str(),"w",stdout);
-}
-#define tcccc         \
-    int tttttt/*,subtask*/;    \
-    cin >> tttttt/* >> subtask*/; \
-    while (tttttt--)/*end
-*/ 
+
 const int N = 1e5;
 vector<pair<int,int>> adj[N];  
 int cur_farthest_node, cur_farthest_node_dist;
